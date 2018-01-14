@@ -1,109 +1,168 @@
-@font-face {
-    font-family: oswald;
-    src: url(./../fonts/oswald/oswald.ttf) format("truetype");
-}
+    @font-face {
+        font-family: oswald;
+        src: url(./../fonts/oswald/oswald.ttf) format("truetype");
+    }
 
-body {
-    font-family: oswald, Verdana, Geneva, Tahoma, sans-serif;
-}
+    body {
+        font-family: oswald, Verdana, Geneva, Tahoma, sans-serif;
+    }
 
-a {
-    color: white;
-}
+    a {
+        color: white;
+    }
 
-nav {
-    font-family: oswald, Verdana, Geneva, Tahoma, sans-serif;
-    z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.8) !important;
-}
+    nav {
+        font-family: oswald, Verdana, Geneva, Tahoma, sans-serif;
+        z-index: 1000;
+        background-color: rgba(0, 0, 0, 0.8) !important;
+        padding: 4%;
+    }
 
-.center {
-    text-align: center;
-}
+    .center {
+        text-align: center;
+    }
 
-.logo {
-    padding: 6%;
-}
+    .logo {
+        padding: 6%;
+    }
+    .button-collapse{
+        position: fixed !important;
+        top: 1.9%;
+        left: 2%;
+        z-index: 5000000 !important;
+    }
+    .side-nav {
+        color: white !important;
+    }
 
-.side-nav {
-    color: white !important;
-}
+    .img__wrap {
+        position: relative;
+    }
 
-.img__wrap {
-    position: relative;
-}
+    .img__wrap:hover .img__description_layer {
+        visibility: visible;
+        opacity: 1;
+    }
 
-.img__wrap:hover .img__description_layer {
-    visibility: visible;
-    opacity: 1;
-}
+    .img__wrap:hover .img__description {
+        transform: translateY(0);
+    }
 
-.img__wrap:hover .img__description {
-    transform: translateY(0);
-}
+    .img__description_layer {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: #fff;
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* transition effect. not necessary */
+        transition: opacity .2s, visibility .2s;
+    }
 
-.img__description_layer {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: #fff;
-    visibility: hidden;
-    opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* transition effect. not necessary */
-    transition: opacity .2s, visibility .2s;
-}
+    .chocolate {
+        background: sienna;
+    }
 
-.chocolate {
-    background: sienna;
-}
+    .caramelo {
+        background: rgb(255, 223, 95);
+    }
 
-.caramelo {
-    background: rgb(255, 223, 95);
-}
+    .manzana {
+        background: green;
+    }
 
-.manzana {
-    background: green;
-}
+    .naranja {
+        background: orangered;
+    }
 
-.naranja {
-    background: orangered;
-}
+    .img__description {
+        transition: .2s;
+        transform: translateY(1em);
+    }
 
-.img__description {
-    transition: .2s;
-    transform: translateY(1em);
-}
+    .separador {
+        border: 1px solid white;
+    }
 
-.separador {
-    border: 1px solid white;
-}
+    .titulo {
+        text-align: center;
+    }
 
-.titulo {
-    text-align: center;
-}
+    .modal {
+        height: 100%;
+        width: 80%;
+    }
 
-.modal {
-    height: 100%;
-    width: 80%;
-}
+    .roboto {
+        font-family: Roboto Light;
+    }
 
-.roboto {
-    font-family: Roboto Light;
-}
+    .modal p {
+        font-family: Roboto Light;
+        font-size: 1.5em;
+    }
 
-.modal p {
-    font-family: Roboto Light;
-    font-size: 1.5em;
-}
+    .modal img {
+        text-align: center;
+        position: relative;
+        margin: 0;
+        width: 60%;
+    }
 
-.modal img {
-    text-align: center;
-    position: relative;
-    margin: 0;
-    width: 60%;
-}
+    .cool-link {
+        display: inline-block;
+        color: white;
+    }
+
+    .cool-link::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: white;
+        transition: width .3s;
+        color: white !important;
+    }
+
+    .cool-link:hover::after {
+        width: 100%;
+        transition: width .3s;
+        color: white !important;
+    }
+
+    #myBtn {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Fixed/sticky position */
+        bottom: 20px;
+        /* Place the button at the bottom of the page */
+        right: 30px;
+        /* Place the button 30px from the right */
+        z-index: 99;
+        /* Make sure it does not overlap */
+        border: none;
+        /* Remove borders */
+        outline: none;
+        /* Remove outline */
+        background-color: transparent;
+        /* Set a background color */
+        color: white;
+        /* Text color */
+        cursor: pointer;
+        /* Add a mouse pointer on hover */
+        padding: 15px;
+        /* Some padding */
+        border-radius: 10px;
+        /* Rounded corners */
+        transition: .5s;
+    } 
+    #myBtn:hover {
+        color: dimgrey;
+        /* Add a dark-grey background on hover */
+    }

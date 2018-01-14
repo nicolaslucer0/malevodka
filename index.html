@@ -47,6 +47,7 @@
 </head>
 
 <body class="black">
+    <a href="#inicio" class="fa fa-arrow-circle-up fa-4x" onclick="topFunction()" id="myBtn" title="Go to top"></a>
     <a name="inicio"></a>
     <header>
         <div class="navbar-fixed">
@@ -58,69 +59,75 @@
 
                     <!-- NAVBAR DESKTOP -->
                     <ul class="right hide-on-med-and-down">
-                        <li>
+                        <li class="cool-link">
                             <a href="#inicio">INICIO</a>
                         </li>
-                        <li>
+                        <li class="cool-link">
                             <a href="#vodkas">VODKAS</a>
                         </li>
-                        <li>
+                        <li class="cool-link">
                             <a href="#coctails">COCTAILS</a>
                         </li>
-                        <li>
+                        <li class="cool-link">
                             <a href="#eventos">EVENTOS</a>
                         </li>
-                        <li>
+                        <li class="cool-link">
                             <a href="#contacto">CONTACTO</a>
                         </li>
                     </ul>
+
                 </div>
-                <!-- SIDENAV CODIGO -->
-                <ul id="nav-mobile" class="side-nav">
+            </nav>
+        </div>
+
+        <nav>
+            <!-- SIDENAV CODIGO -->
+            <ul id="slide-out" class="side-nav">
                     <li>
                         <a href="#inicio">COCKTAILS</a>
                     </li>
                     <li>
-                        <a href="./asesinos.html">VODKAS</a>
+                        <a href="#vodkas">VODKAS</a>
                     </li>
                     <li>
                         <a href="#coctails">COCKTAILS</a>
                     </li>
                     <li>
-                        <a href="habitaciones.html">EVENTOS</a>
+                        <a href="#eventos">EVENTOS</a>
                     </li>
                     <li>
-                        <a href="contacto.html">CONTACTO</a>
+                        <a href="#contacto">CONTACTO</a>
                     </li>
                 </ul>
-
-                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                
+                <a href="#" data-activates="slide-out" class="button-collapse">
                     <i class="material-icons">menu</i>
-                </a>
-            </nav>
-        </div>
+                </a> 
+        </nav>
 
 
     </header>
     <main class="black">
         <div class="carousel carousel-slider center black" data-indicators="false">
             <div class="carousel-item black white-text black" href="#one!">
-                <img src="img/1.jpg">
-            </div>
-            <div class="carousel-item black white-text" href="#two!">
-                <img src="img/s1.jpg">
-            </div>
-            <div class="carousel-item green white-text" href="#three!">
-                <img src="img/s2.jpg">
+                <img src="img/slider/s1.jpg">
             </div>
             <div class="carousel-item blue white-text" href="#four!">
-                <h2>Fourth Panel</h2>
-                <p class="white-text">This is your fourth panel</p>
+                <img src="img/slider/s4.jpg">
             </div>
-            <a name="vodkas"></a>
+            <div class="carousel-item green white-text" href="#three!">
+                <img src="img/slider/s3.jpg">
+            </div>
+            <div class="carousel-item black white-text" href="#two!">
+                <img src="img/slider/s2.jpg">
+            </div>
         </div>
-
-        <!-- vodkas -->
+        <br>
+        <br>
+        <!-- ############### -->
+        <!-- #### vodkas ### -->
+        <!-- ############### -->
+        <a name="vodkas"></a>
         <section class="white-text">
             <div class="container">
                 <div class="row">
@@ -190,7 +197,9 @@
                         </div>
                         <div class="col s12 m6">
                             <h4 class="card-title">MANZANA VERDE</h4>
-                            <p> Este vodka es de carácter espeso, ya que posee el azúcar del caramelo y su consistencia es más bien densa. El mismo es ideal para acompañar con dulces sutiles, en una pequeña medida, solo y sin mezclar.</p>
+                            <p> Este vodka es de carácter espeso, ya que posee el azúcar del caramelo y su consistencia es más
+                                bien densa. El mismo es ideal para acompañar con dulces sutiles, en una pequeña medida, solo
+                                y sin mezclar.</p>
                         </div>
                     </div>
                 </div>
@@ -204,8 +213,9 @@
                             </div>
                             <div class="col s12 m6">
                                 <h4 class="card-title">MALEVO CHOCOLATE</h4>
-                                <p>Este vodka es de carácter semi-espeso ya que posee en su consistencia cacao, es considerado uno de nuestros productos más fuertes; esto se debe al chocolate semi-amargo fundido en el vodka. Puede disfrutarse con un poco
-                                    de café y para los días fríos.</p>
+                                <p>Este vodka es de carácter semi-espeso ya que posee en su consistencia cacao, es considerado
+                                    uno de nuestros productos más fuertes; esto se debe al chocolate semi-amargo fundido
+                                    en el vodka. Puede disfrutarse con un poco de café y para los días fríos.</p>
                             </div>
                         </div>
                     </div>
@@ -220,7 +230,9 @@
                             </div>
                             <div class="col s12 m6">
                                 <h4 class="card-title">MALEVO MANZANA VERDE</h4>
-                                <p>Este vodka posee una ligereza y frescura propia de la manzana verde, el aroma a su fruta es intenso mientras que se mezcla con la fuerza del vodka. Ideal para mezclar con bebidas energéticas.
+                                <p>Este vodka posee una ligereza y frescura propia de la manzana verde, el aroma a su fruta
+                                    es intenso mientras que se mezcla con la fuerza del vodka. Ideal para mezclar con bebidas
+                                    energéticas.
                             </div>
                         </div>
                     </div>
@@ -235,8 +247,9 @@
                             </div>
                             <div class="col s12 m6">
                                 <h4 class="card-title">MALEVO NARNJA</h4>
-                                <p>Este vodka posee una ligereza e intensidad propia de la naranja, el aroma a su fruta es intenso mientras que se mezcla con fuerza del vodka; es uno de nuestro productos más fuertes. Ideal para mezclar varios jugos, jarabes
-                                    etc.
+                                <p>Este vodka posee una ligereza e intensidad propia de la naranja, el aroma a su fruta es intenso
+                                    mientras que se mezcla con fuerza del vodka; es uno de nuestro productos más fuertes.
+                                    Ideal para mezclar varios jugos, jarabes etc.
                             </div>
                         </div>
                     </div>
@@ -244,6 +257,11 @@
 
             </div>
         </section>
+        <br>
+        <br>
+        <!-- ############### -->
+        <!-- ## COCKTAILS ##-->
+        <!-- ############### -->
         <a name="coctails"></a>
         <section class="white-text">
             <div class="container">
@@ -260,7 +278,7 @@
                 <div class="row">
                     <div class="col s12 m3 modal-trigger" href="#modalcocktail" style="cursor:pointer;">
                         <div class="img__wrap">
-                            <img class="responsive-img" src="./img/portfolio/vodka/caramelo.jpg" />
+                            <img class="responsive-img" src="./img/portfolio/cocktails/cocktail1.jpg" />
                             <div class="img__description_layer caramelo">
                                 <h4 class="img__description">CARAMELO</h4>
                                 <!-- <p class="img__description"> Este vodka es de carácter espeso, ya que posee el azúcar del caramelo y su consistencia es más bien densa. El mismo es ideal para acompañar con dulces sutiles, en una pequeña medida, solo y sin mezclar.</p> -->
@@ -278,17 +296,22 @@
                             </div>
                             <div class="col s12 m6">
                                 <h4 class="card-title">MALEVO NARNJA</h4>
-                                <p>Este vodka posee una ligereza e intensidad propia de la naranja, el aroma a su fruta es intenso mientras que se mezcla con fuerza del vodka; es uno de nuestro productos más fuertes. Ideal para mezclar varios jugos, jarabes
-                                    etc.
+                                <p>Este vodka posee una ligereza e intensidad propia de la naranja, el aroma a su fruta es intenso
+                                    mientras que se mezcla con fuerza del vodka; es uno de nuestro productos más fuertes.
+                                    Ideal para mezclar varios jugos, jarabes etc.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <br>
+        <br>
 
+        <!-- ################### -->
+        <!-- ##### EVENTOS ##### -->
+        <!-- ################### -->
         <a name="eventos"></a>
-        <!-- EVENTOS -->
         <section class="white-text">
             <div class="container">
                 <div class="row titulo">
@@ -304,14 +327,16 @@
                 </div>
             </div>
         </section>
-
+        <br>
+        <br>
+        <br>
+        <br>
         <!-- CONTACTO -->
         <a name="contacto"></a>
         <section class="white-text">
             <div class="container">
                 <div class="row titulo">
                     <div class="col-lg-12">
-                        <div class="separador"></div>
                         <h3>CONTACTO</h3>
                         <div class="separador"></div>
                     </div>
@@ -322,10 +347,14 @@
                         <h4>Nuestras redes sociales:</h4>
                         <div class="row">
                             <div class="col s1 l1 offset-s5 offset-l5">
-                                <a href="https://www.instagram.com/malevodka"><i class="fa fa-instagram fa-2x"></i></a>
+                                <a href="https://www.instagram.com/malevodka">
+                                    <i class="fa fa-instagram fa-2x"></i>
+                                </a>
                             </div>
                             <div class="col s1 l2">
-                                <a href="https://www.facebook.com/Malevo-Vodka-Artesanal-655612311290004/"><i class="fa fa-facebook fa-2x"></i></a>
+                                <a href="https://www.facebook.com/Malevo-Vodka-Artesanal-655612311290004/">
+                                    <i class="fa fa-facebook fa-2x"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
