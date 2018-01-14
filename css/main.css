@@ -1,0 +1,109 @@
+@font-face {
+    font-family: oswald;
+    src: url(./../fonts/oswald/oswald.ttf) format("truetype");
+}
+
+body {
+    font-family: oswald, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: white;
+}
+
+nav {
+    font-family: oswald, Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.logo {
+    padding: 6%;
+}
+
+.side-nav {
+    color: white !important;
+}
+
+.img__wrap {
+    position: relative;
+}
+
+.img__wrap:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img__wrap:hover .img__description {
+    transform: translateY(0);
+}
+
+.img__description_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+
+.chocolate {
+    background: sienna;
+}
+
+.caramelo {
+    background: rgb(255, 223, 95);
+}
+
+.manzana {
+    background: green;
+}
+
+.naranja {
+    background: orangered;
+}
+
+.img__description {
+    transition: .2s;
+    transform: translateY(1em);
+}
+
+.separador {
+    border: 1px solid white;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.modal {
+    height: 100%;
+    width: 80%;
+}
+
+.roboto {
+    font-family: Roboto Light;
+}
+
+.modal p {
+    font-family: Roboto Light;
+    font-size: 1.5em;
+}
+
+.modal img {
+    text-align: center;
+    position: relative;
+    margin: 0;
+    width: 60%;
+}
